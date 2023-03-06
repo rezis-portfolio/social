@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'League Spartan', sans-serif;
+  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 left 0, right 0 bottom -1vw;
+  padding-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 150px;
+  padding-bottom: 100px;
+  padding-right: 200px;
+}
+
+/* first section */
+
+main .head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  width: 300px;
+  font-size: 40px;
+  color: hsl(300, 43%, 22%);
+}
+
+.title p {
+  width: 400px;
+  color: hsl(303, 10%, 53%);
+}
+
+.stars {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.stars div {
+  width: 350px;
+  background-color: hsl(300, 24%, 96%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.first {
+  margin-bottom: 10px;
+}
+
+.second {
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.third {
+  margin-left: 80px;
+}
+
+/* second section */
+
+.cards {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.first-div,
+.second-div,
+.third-div {
+  background-color: hsl(300, 43%, 22%);
+  padding: 15px 20px 20px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.name {
+  margin: 0;
+  margin-bottom: 5px;
+  color: hsl(0, 0%, 100%);
+}
+
+.verify {
+  margin: 0;
+  color: hsl(333, 80%, 67%);
+}
+
+.text p {
+  color: hsl(300, 24%, 96%);
+  width: 280px;
+}
+
+.second-div {
+  position: relative;
+  left: 20px;
+  top: 15px;
+}
+
+.third-div {
+  position: relative;
+  left: 40px;
+  top: 30px;
+}
+
+
+/* footer */
+
+footer {
+  font-size: 16px;
+  text-align: center;
+  opacity: 100;
+  letter-spacing: 3px;
+}
+footer a {
+  color: hsl(333, 80%, 67%);
+  text-decoration: none;
+  opacity: 10;
+}
+
+footer a:hover {
+  color: hsl(300, 43%, 22%);
+  text-decoration: overline;
+}
+
+@media (max-width:800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    background-image: url(images/bg-pattern-top-mobile.svg);
+  }
+
+  main {
+    padding: 0;
+  }
+
+  main .head {
+    grid-template-columns: 1fr;
+  }
+
+  .stars {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .title {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title h1 {
+    text-align: center;
+  }
+
+  .title p {
+    text-align: center;
+    width: 295px;
+    margin-bottom: 40px;
+  }
+
+  .second {
+    margin-left: 0;
+  }
+
+  .third {
+    margin-left: 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-div {
+    position: static;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .third-div {
+    position: static;
+  }
+
+  footer {
+    width: 300px;
+    margin: 10px auto;
+    line-height: 1.5;
+  }
+}
